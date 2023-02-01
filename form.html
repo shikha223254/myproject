@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <style>
+            form{
+                margin:auto;
+                padding: 30px;
+                border: 2px solid;
+                display: block;          
+                background-color:#f1dfdf;
+                width: 700px;
+            }
+            input{
+                margin-bottom: 10px;
+                margin-top: 5px;
+                border: 2px solid;
+                border-radius: 15px;  
+            }
+            label{
+                display: block;
+                margin-bottom:7px;
+                font-family:'Sofia Sans Semi Condensed', sans-serif;
+                font-size: 14px;
+                font-weight: 600;
+                color: #000;
+                margin-top: 4px;
+            }
+            input[type=text]:focus{
+                background-color: rgb(44, 92, 92);
+                color:white;
+            }
+            .textfield{
+                width: 90%;
+                padding: 5px;
+            }
+            select{
+                margin-right: 40px;
+                margin-left: 10px;
+                border: 1px solid;
+                border-radius: 5px;
+                font-family: fangsong;
+                font-weight: 500;
+                background-color: #edeaed;   
+            }
+            label.gender{
+                display:inline;
+                margin-left: 40px;
+                margin-right: 4px;
+            }
+            label.hobbies{
+                display: inline;
+                margin-left: 40px;
+                margin-right: 4px; 
+            }
+            label.select{
+                display:inline;
+                margin-left: 40px;
+                margin-right: 4px;
+            }
+            textarea:focus{
+                margin-bottom:7px;
+                background-color: rgb(44, 92, 92);
+                color:white;
+            }
+            textarea#message {
+                width: 100%;           
+                border: 1px solid;
+                border-radius: 5px;
+            }
+            input#myfile {
+                width: 30%;
+                margin-bottom: 20px;
+                display: block;
+                padding-left: 0px;
+                font-weight: 600;
+                font-family: serif;
+            }
+            label.name{
+                display:inline-block;
+                width:100%;
+                margin-bottom: 0;
+                font-size: 14px;
+                color: #000;
+            }
+            h2 {
+                text-align: center;
+                margin-top: 0px;
+                margin-bottom: 25px;
+                font-size: 35px;
+                font-weight: 400;
+            }
+           div.fleft{
+                display: inline-block;
+                float:left;
+           }
+           div.fright{
+            display:inline-block;
+            float:right;
+           }
+           .d-flex {
+            display: flex;
+           }
+           .w-500 {
+            width: 500px;
+           }
+           input[type="submit"]{
+            background-color: #11416a;
+            color: white;
+            padding: 8px 20px;
+            font-size: 20px;
+            font-family: fangsong;
+            font-weight: 500;
+            }
+            input[type="Submit"]:hover{
+                background-color: #215f5c;
+            }
+        </style>
+    </head>
+
+    <body>
+        <form>
+            <h2>Contact Form</h2>
+            <div class="d-flex">
+                <div class="w-500">
+                    <label class="name" for="fname">Enter your first Name:</label>
+                    <input class="textfield" type="text" id="fname" name="fname" placeholder="Enter first name">
+                </div>
+                <div class="w-500">
+                    <label class="name" for="lname">Enter your last Name:</label>
+                    <input class="textfield" type="text" id="lname" name="lname" placeholder="Enter last name">
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="w-500">
+                    <label class="name" for="email">Enter your email Id:</label>
+                    <input class="textfield" type="email" id="email" name="email" placeholder="Enter email id">
+                </div>
+                <div class="w-500">
+                    <label class="name" for="phone">Enter your contact No.:</label>
+                    <input class="textfield" type="number" maxlength="10" name="phone" id="phone" placeholder="123-23-345">
+                </div>
+            </div>    
+
+        <label for="gender">Gender:</label>
+        <label class="gender" for="Male">Male</label>
+        <input type="radio" name="gender" id="male">
+        <label class="gender"for="Female">Female</label>
+        <input type="radio" name="gender" id="female">
+
+        <label for="hobbies">Hobbies:</label>
+        <label class="hobbies"for="sport">Sports</label>
+        <input type="checkbox" name="hobbies" id="sports">
+        <label class="hobbies" for="music">Music</label>
+        <input type="checkbox" name="hobbies" id="music">
+        <label class="hobbies" for="dance">Dance</label>
+        <input type="checkbox" name="hobbies" id="dance">
+
+        <label for="select">Location:</label>
+        <label class="select"for="select">Country</label>
+        <select name="Country" id="Country">
+            <option value="India">India</option>
+            <option value="US">US</option>
+            <option value="Nepal">Nepal</option>
+            <option value="Europe">Europe</option>
+        </select>
+        <label class="select" for="state">State</label>
+        <select name="State" id="State">
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Gujarat">Gujarat</option>
+        </select>
+        <label class="select" for="City">City</label>
+        <select name="City" id="City">
+            <option value="Indore">Indore</option>
+            <option value="Ujjain">Ujjain</option>
+            <option value="Bhopal">Bhopal</option>
+            <option value="Dewas">Dewas</option>
+        </select>
+
+        <label for="Description">Description:</label>
+        <textarea name="Description" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+        <label for="myfile">Choose File:</label>
+        <input type="file" name="myfile" id="myfile">
+
+        <input type="Submit" value="Submit">
+    </form> 
+    </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Image Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        position: relative;
+        width: 720px;
+        margin: auto;
+        box-sizing: border-box;
+      }
+      .card-block {
+        width: 100%;
+        text-align: center;
+        padding: 0.6em 1em 0.6em 0.6em;
+        margin-bottom: 1em;
+        border-radius: 0.3em;
+      }
+
+      .img {
+        width: 300px;
+        height: 300px;
+        border-radius: 0%;
+        background: linear-gradient(to bottom, #d6c091 0%, #c05c9a 100%);
+        opacity: 0.7;
+        margin: 0 0.6em 0 0;
+        border: solid 1px firebrick;
+      }
+
+      .card-block h3 {
+        font-size: 19px;
+        margin: 0px;
+      }
+
+      .content p {
+        font-size: 1em;
+        color: #222;      
+        padding: 3px;
+      }
+      .content-p1{
+        margin-top: 40px;
+      }
+      .mynav {
+        position: absolute;
+        top: 20px;
+        right: 0;
+        display: inline-block;
+        cursor: pointer;
+      }
+      .mynav-prev,
+      .mynav-next {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 50%;
+        border-color: transparent;
+        z-index: 9;
+      }
+      .vl{
+        border-left: 2px solid#d4cccc;;
+      height: 56px;
+      position: absolute;
+      left: 50%;
+      margin-left: -3px;
+      top: 65px;
+      }
+
+
+    </style>
+
+  </head>
+
+<body>
+  <div class="container">
+
+    
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <div class="card-block">
+          
+          <div class="content">
+            <h3>John Deo</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            <div class="vl"></div>
+            <p class="content-p1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae adipisci officia maiores ratione laboriosam saepe, sequi vitae, magnam labore pariatur veniam tempore voluptates necessitatibus minus fuga a, natus quibusdam veritatis!</p>
+            <div class="v1"></div>
+            <div class="img">
+              <img src="temp2img/teamimg1.png" alt="">
+              <img src="temp2img/teamimg2.png" alt="">
+              <img src="temp2img/teamimg3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card-block">
+          
+          <div class="content">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="img"></div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card-block">
+          <div class="img"></div>
+          <div class="content">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="card-block">
+          <div class="img"></div>
+          <div class="content">
+            <h3>Card Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mynav">
+        <img class="mynav-prev" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAACXBIWXMAABYlAAAWJQFJUiTwAAAEGklEQVRo3uVaX0hTURz+7XgfpoJusDEGthklzlq3h6YNCnT5Ik4YRMKKAhFD6knLQjQwHzILUZ+MUUgglA8hGCq+6BKSlu2hhqYikluCyAabC+d9mN0ersx5vfPPdu7dvfY9bHD/ft/5fef8zj3nJ6NpGlJGdJt2LwV8/s1x9+q8b2PWG9x/jVGvLNLlVpjydOpsU4GKyJABDshSERChogOTy6Mzq07P2nHvtZBaa0nenWtnsuREGgS4Fvwdg54keHMqabGTZoNaIAGuBX+jY4bTJKnAqFf21JckIeMYAgJhqrZ7GkurHxCN/gdXVDly/AIcY4tNb76BIOiqK66vLMQmIEJF7Z1TvDY8ZygGm0uP0r8PERAIU+aG0fXQFggOjSLT1Ws91E7ogHNz3lC62APAemjL3DA65w0lGYE5b8jcOAIigKun6rxecbwIBMKUrX0CxAFb+0QgTB0jAhEqSt4fTpdzEvUHT5+Ns09zRMDeOSUq9kx/sHdOHclCjrFFgUfMI8LpWXOMLR5ioUCYOl3zAUSMX29vsAbWPRGo7Z4GcWM/QxQ/SxOneVhGci34uQU0OmZACmDxRLHmxz5D5gmz3mB8EHYEdAx6QDqIZ4uYzCV+97N6QoSK7goYmFzm9X0ZSNZcfeHP0O0v3VZcz4xxRgAwOrPKH/tzOsXi6+utNy8CgDFfmfS3Lwsxzii6TfPknwwke1lr+tpbpVFmxg6eUmfjclF0mwYAwr0U4KnhP7aVx1PHDvdSwGxQI59/U4CG5wMMczTuXsXu+HtVBgHGIoY5Me/bwNXwz2suCUOdAcOcwJKABXA8Z0oGAEJyDc9CqgI+d1Ua85VpzMoolZt16uz0sk9VgM+/ObsSlLAAALjaNPZqZEHCArb/0o/73ZcbRtaD6VnIQEY9BhP/9IUK7w4JHAqGOSrS5WJ5nPChYJijClMexocKGQqGOdJhmt8KHwqGOTIVqPh4ugChYJgjIkNmIbV8vIAzFL8xzd4tpJbZaUYAYC3J46+dmFA8e/8DAGZXgqxlqaQR4yyjaTpCRTW3BkFSWH9nZ1bbEQBkyQmeXMQTLKQ2tlewk4lb7KSEBMSz3RFgNqixpGRhEnD82szuXKinvkQSAlg8dwWYDWrx9wQLqWUtjZ2sHRpVjryrrli07Lvqivdv3LO/B+orC8VpJAup5awAOYn7xFlywtVr1SgyxcPe1WtNVLnC/UmpypEPt5WLRMBwW/kBNSsJv4nP6xWunqr0xkGjyDy40gNOeL0Q4yVPn034cclCaj19tqMUz/0HNXPxdpJw1WIMEq4bZcmQauUuK2dLtXaahTRWr8ewsTdblCW47NPO/1Pm11aWH2l1OqsBFC+eOJ3VAN8fPnI6q9m3hUr3/ic6zj5/toz7+C7+AV3+JtoAlQh6AAAAAElFTkSuQmCC">
+        <img class="mynav-next" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAIAAAAlC+aJAAAACXBIWXMAABYlAAAWJQFJUiTwAAAEFElEQVRo3uVaXUhTYRh+93kupoFusCED24wKtdbpZsqiQJc34qRBlKwoEDHErlS86OeivCgkxJ8bYxQhCOVFCEJKN2ZC0snsoqE5kagtQWSDzUXzXMxOF5+cHY9n/u07Z+fYc7Gxc84+nud93u/vfK+O4zjIGMkNbnYpEgr/eTu7vBBamwtGtz9jtxnLrAU1jiKr+YjjpInK0QEJ6DIRkGCTQ+++j80sT/pX9vtfF21xVxTdvHg8T09lQQATCD8e9h+At6SSe17aWWpWSAATCLf5ZiSTJBPYbcbe5ooDyNiHgEicbeyZJhL1Hdx40X7elK8nL8A3vtjx/DMogu6m8ubaEmICEmzS2zUla+AlrRi+U7mX/r2LgEicdbaOrcbWQXEUGnKZPveu6YR2uDcfjGWLPQCsxtadrWPzwdgBHZgPxpxtb0AFYHrrTtsM+3MgEmc9nROgDng6JyJxdh8OJNgkfXs0W5mTrj/4BzySfVrCAW/XlKrY4/7g7ZraUwr5xhcVHjH3iEn/im98cZcUisTZYw2vQcX4MXhFNLBucaCxZxrUje0MkXCVps7kESUSEwhLC2jzzYAWIOKJ+PATXyHLhLlgVGjCpoDHw37QDoRsEZ651J/9op6QYJMpAUPvvpNq+mOP+/fIjTtXz+QgnawaeM4IAMZmlok06iw124uNAHD/2tnFZ5dPWQ3yCeA5o+QGRyp/jpqPpFYvxtxPfXVPGh0yWTHpX0lucACAZpci8sWppa5UPiswcxQK/5F3ISmbFZg5eju7rMC4IYcVmDlaCK0ptKYnbQVmjhSegAlagZmjLGyviFqRBQG8FR+6azUsAADsxUarYOrQnoC5n9HMB/GsCXj6JnChYzzzdijlqa9G1y91TnwLxYi0huw2o8KBL7k1QoQ9Zk6VWQuUmQrIBh4AyqwFAIBqHEXaCjwPzJzKfCBTOPA8MHPKcdIka+DvDn7Z+MvJ0ThmTlE5OhdtIbKn+SUY1OULPIaLtuCTZgQA7goy3YAJhOd+RgHg0auvxDNeBJ6zjuO4BJssvD4MmsLqSy9+244AIE9PuWiLhti7aAt/VrC5lLjnpTUkQMgWpd6IKDslZzIBCw/0U4u53uYKTQgQ8UwJcJaa1d8TXLRFVE9xuE5oTPn67qZy1bLvbirffnAv3tA015aoM5FctEWyAuQwnhPn6Smmz11oyFUPe6bPna5yRXpPbMrXjz6oVomA0QfVO9SspN3Un7YZmN667PpQaMjdudIDDnm9EM4l/4BH+XHJRVv8A569FM/9BzVzwnTScNWicNul1bpRkQytVu6K5myt1k6LkMXqdR5rW2eLqjSPvd/8fog/PVXF39r6K+sBGlra+yvrAYrP4d9bEavc+p3uuvj+iSrp6yn8A+B+Jfzt4SHzAAAAAElFTkSuQmCC">
+    </div>
+  
+      <!--<button>&#60;</button>
+              <button>&#62;</button>-->
+    </div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      dots: false,
+      lazyLoad: true,
+      responsiveClass:true
+    });
+  });
+  
+  $('.mynav-next').click(function() {
+      $(".owl-carousel").trigger('next.owl.carousel');
+  })
+  // Go to the previous item
+  $('.mynav-prev').click(function() {
+      $(".owl-carousel").trigger('prev.owl.carousel');
+  })
+  </script>
+  
+</body>
+
+</html>
+
+

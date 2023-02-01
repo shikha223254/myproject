@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tempalte1</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="stylesheet" href="css/w3.css">
+        <style>
+            body{
+                margin: 0px;
+            }
+            .wrapper{
+                width: 1000px;
+                margin: auto;
+                box-shadow: 2px 13px 13px grey;
+            }
+           .w-100{
+                width: 100%;
+           }
+           .logo{
+                width: 135px;
+                height: 50px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+           }
+          .mr-ml{
+                margin-left: 40px;
+                margin-right: 40px;
+           }
+           .m-t{
+                margin-top:50px;
+           }
+           .m-b{
+                margin-bottom:40px;
+           }
+           .p-b{
+                padding-bottom: 25px;
+           }
+           .p-t{
+                padding-top: 20px;
+           }
+           .menu{
+                float: right;
+                list-style-type: none;
+                display: flex;
+                margin-top: 50px;
+                margin-top: 38px;
+           }
+          .menu li{
+                padding: 5px 15px 5px 15px;
+           }
+           .bg{
+                background: url(img/btemp2.png) rgba(255, 255, 255, 0.3);
+                background-repeat: no-repeat;
+                background-blend-mode: overlay;
+                background-size: cover;
+                height: 600px;
+                height: 480px;
+           }
+           .menua{
+                color: whitesmoke;
+                font-size: 20px;
+                text-decoration: none;
+                font-weight: 600;
+           }
+           .active{
+                color:black;
+                font-weight: 600;
+                font-size: 20px;
+                text-decoration: underline;
+           }
+           .menua:hover{
+                color:black;
+               
+                font-size: 20px;
+                text-decoration: underline;
+           }
+           .hgame{
+                text-align: center;
+                color: whitesmoke;
+                font-weight: 600;
+                font-size: 50px;
+                margin-bottom: 0px;
+            }
+            .color1{
+                color: whitesmoke;
+            }
+           .bgcolor{
+                background-color: whitesmoke;
+           }
+           .align{
+                text-align: center;   
+           }
+           .get{
+                text-decoration: none;
+                color:#4069a9;
+                border: 2px;
+                padding: 14px 17px;
+                border-radius: 20px;
+                font-size: 17px;
+                font-weight: 600;
+                margin-top: 50px;
+           }
+           .get:hover{
+            background-color:#c8d1e0 ;
+           }
+           .hwelcome{
+                
+                font-size: 30px;
+                font-weight: 600;
+                position: relative;
+           }
+           .color{
+                color:#4069a9;
+           }
+           .hwelcome::after {
+                width: 50px;
+                height: 3px;
+                content: '';
+                margin: auto;
+                background-color: #0d2156;
+                position: absolute;
+                bottom: -6px;
+                right: 0;
+                left: 0;
+            }
+            .read{        
+                border: 2px solid;
+                padding: 5px 15px 5px 15px;
+            }
+            .d-flex{
+                display: flex;
+                justify-content: space-between;
+            }
+            .clock{ 
+                width: 350px;
+                padding-top: 40px;
+                background-color:#4069a9;
+                padding-bottom: 60px;
+            }
+            .ourstory{
+                margin-top: 0px;
+                font-size: 30px;
+                font-weight: 600;
+            }
+            .clock img{
+                width: 50px;
+            }
+            .clock p{            
+                margin: 0px;
+                padding: 0px 15px 15px 15px;
+            }
+            .mission{
+                background-color:black;
+            }
+            .vision{
+                padding-top: 15px;
+            }
+            .h-20{
+                height:20%;
+            }
+            .flex{
+                display: flex;
+                justify-content: space-around;
+            }
+            .web{
+                display: flex;
+                width: 260px;
+                border-radius: 50px 0px 0px 50px;
+            }
+            .web:hover{
+                background-color: #e4e8f1;
+            }
+            .icon{
+                border: 2px solid;
+                border-radius: 50%;
+                padding: 12px;
+            }
+            .hicon{
+                padding-left: 12px;
+            }
+            .bgcolo1{
+                background-color: #4069a9;
+            }
+            .year{
+                margin-top: 20px;
+                width: 200px;
+                text-align: center;
+                padding-top: 12px;
+            }
+            .year h1{           
+                font-size: 53px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                font-weight: 600;
+            }
+            span{
+                font-size: 25px;
+                top: -8px;
+                position: relative;
+            }
+            .year h6{           
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .taball{
+                display:flex;
+            }
+            .tabrow{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10px;
+            }
+            .tabrow a{
+                font-size: 13px;
+                font-weight: 600;   
+            }
+            .tab{     
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="bg">
+                <div class="w-100">
+                    <img class="logo mr-ml"src="img/1page.png" alt="">
+                    <ul class="menu mr-ml">
+                        <li>
+                            <a class="menua active" href="">Home</a>
+                        </li>
+                        <li>
+                            <a class="menua"href="">About</a>
+                        </li>
+                        <li>
+                            <a class="menua" href="">Our Services</a>
+                        </li>
+                        <li>
+                            <a class="menua"href="">Portfolio</a>
+                        </li>
+                        <li>
+                            <a class="menua"href="">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-100">
+                    <h1 class="hgame">Game Development</h1>
+                    <p class="align color1">Lorem ipsum dolor sit amet consectetuPerspiciatis itaque <br>adipisci 
+                        mollitia ipsam aperiam consequuntur quia?
+                    </p>
+                    <div class="align m-t">
+                        <a class="get bgcolor" href="">GET STARTED</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="align">
+                <h2 class="hwelcome color">Welcome To Our Website</h2>
+                <p class="p-t ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nobis ipsum mollitia exercitationem temporibus 
+                    blanditiis repellat<br> numquam molestiae illo laudantium incidunt aspernatur amet laboriosam pariatur,
+                    Lorem ipsum dolor <br>sit amet consectetur adipisicing elit. At a atque deleniti veritatis aperiam id repellat 
+                    nemo commodi porro cumque.<br> Adipisci  molestias consequatur, vitae illo necessitatibus quas totam blanditiis vero. 
+                    voluptate deleniti natus reprehenderit sapiente?<br>
+                </p>
+                <div class="align m-t p-b">
+                    <a class="get read" href="">Read More</a>
+                </div>
+            </div>
+            <div class="d-flex align ">
+                <div class="clock">
+                    <div class=" w-100 h-20">
+                        <img src="img/clock.png" alt="">
+                    </div>
+                    <h2 class="ourstory color1">Our Story</h2>
+                    <p class="color1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nobis ipsum mollitia exercitationem temporibus 
+                        blanditiis repellat numquam molestiae illo laudantium incidunt aspernatur amet laboriosam pariatur,
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At a atque deleniti veritatis aperiam id repellat 
+                        nemo commodi porro cumque. Adipisci  molestias consequatur, vitae illo necessitatibus quas totam blanditiis vero. 
+                        voluptate deleniti natus reprehenderit sapiente?
+                    </p>    
+                </div>
+                <div class="clock mission">
+                    <div class=" w-100 h-20">
+                        <img src="img/circle.png" alt="">
+                    </div>
+                    <h2 class="ourstory color1">Our Mission</h2>
+                    <p class="color1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nobis ipsum mollitia exercitationem temporibus 
+                        blanditiis repellat numquam molestiae illo laudantium incidunt aspernatur amet laboriosam pariatur,
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At a atque deleniti veritatis aperiam id repellat 
+                        nemo commodi porro cumque. Adipisci  molestias consequatur, vitae illo necessitatibus quas totam blanditiis vero. 
+                        voluptate deleniti natus reprehenderit sapiente?
+                    </p>    
+                </div>
+                <div class="clock">
+                    <div class=" w-100 h-20">
+                        <img class=" vision" src="img/eye.png" alt="">
+                    </div>
+                    <h2 class="ourstory color1">Our Vission</h2>
+                    <p class="color1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nobis ipsum mollitia exercitationem temporibus 
+                        blanditiis repellat numquam molestiae illo laudantium incidunt aspernatur amet laboriosam pariatur,
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At a atque deleniti veritatis aperiam id repellat 
+                        nemo commodi porro cumque. Adipisci  molestias consequatur, vitae illo necessitatibus quas totam blanditiis vero. 
+                        voluptate deleniti natus reprehenderit sapiente?
+                    </p>    
+                </div>
+            </div>     
+            <div class="align m-b">
+                <h2 class="hwelcome color">Our Services</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nobis ipsum mollitia exercitationem temporibus 
+                    blanditiis repellat<br> numquam molestiae illo laudantium incidunt aspernatur<br>
+                </p>    
+            </div>
+            <div class="flex m-b">
+                <div class="web bgcolor">
+                    <i class="fa-solid fa-desktop fa-2x icon color"></i>
+                    <h4 class="hicon color">Web Design</h4>
+                </div>
+                <div class="web bgcolor">
+                    <i class="fa-solid fa-laptop fa-2x icon color"></i>
+                    <h4 class="hicon color">Web Development</h4>
+                </div>
+                
+                <div class="web bgcolor">
+                    <i class="fa-solid fa-gear fa-2x icon color"></i>
+                    <h4 class="hicon color">Theme Development</h4>
+                </div>
+            </div>
+
+            <div class="flex m-b">
+                <div class="web bgcolor">
+                    <i class="fa-solid fa-gears fa-2x icon color"></i>
+                    <h4 class="hicon color">Game Development</h4>
+                </div>
+                <div class="web bgcolor">
+                    <i class="fa-solid fa-robot fa-2x icon color"></i>
+                    <h4 class="hicon color">Apps Development</h4>
+                </div>
+                
+                <div class="web bgcolor">
+                    <i class="fa-solid fa-desktop fa-2x icon color"></i>
+                    <h4 class="hicon color">Desktop Application</h4>
+                </div>
+            </div>
+
+            <div class="flex m-b">
+                <div class="web bgcolor">
+                    <i class="fa-brands fa-wordpress fa-2x icon color"></i>
+                    <h4 class="hicon color">Wordpress Themes</h4>
+                </div>
+                <div class="web bgcolor">
+                    <i class="fa-solid fa-gear fa-2x icon color"></i>
+                    <h4 class="hicon color">Wordpress Plugins</h4>
+                </div>
+                
+                <div class="web bgcolor">
+                    <i class="fa-solid fa-phone fa-2x icon color"></i>
+                    <h4 class="hicon color">Support & IT</h4>
+                </div>
+            </div>
+
+            <div class="flex  align bgcolo1 color1">
+                <div class="year m-b">
+                    <i class="fa-solid fa-calendar-days fa-2x icon"></i>
+                    <h1>12<span>+</span></h1>
+                    <h6>YEARS OF EXPERIENCE</h6>
+                </div>
+                <div class="year">
+                    <i class="fa-solid fa-check fa-2x icon"></i>
+                    <h1>999<span>+</span></h1>
+                    <h6>COMPLETED PROJECTS</h6>
+                </div>
+                <div class="year">
+                    <i class="fa-solid fa-users fa-2x icon"></i>
+                    <h1>480<span>+</span></h1>
+                    <h6>TOTAL CLIENTS</h6>
+                </div>
+                <div class="year">
+                    <i class="fa-solid fa-heart fa-2x icon"></i>
+                    <h1>15<span>+</span></h1>
+                    <h6>AWARD WON</h6>
+                </div>
+            </div>
+
+            <div class="align m-b">
+                <h2 class="hwelcome color">Our Portfolio</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nobis ipsum mollitia exercitationem temporibus 
+                    blanditiis repellat<br> numquam molestiae illo laudantium incidunt aspernatur<br>
+                </p>    
+            </div>
+
+            <div class="w3-container m-b"style="padding-bottom:40px">
+                <div class="w3-row tabrow ">
+                    <a href="javascript:void(0)" onclick="openImage(event, 'ALL');">
+                      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding tab"id="defaultOpen">ALL</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openImage(event, 'WEB DEVELOPMENT');">
+                      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding tab">WEB DEVELOPMENT</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openImage(event, 'GAME DEVELOPMENT');">
+                      <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding tab">GAME DEVELOPMENT</div>
+                    </a>
+                    <a href="javascript:void(0)"onclick="openImage(event, 'APP DEVELOPMENT');">
+                        <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding tab">APP DEVELOPMENT</div>
+                      </a>
+                </div>
+                
+                <div id="ALL" class="w3-container img">
+                    <div class="taball">
+                        <img src="img/webimg1.png" alt=""style="width:100%">
+                        <img src="img/webimg2.png" alt=""style="width:100%">
+                        <img src="img/picimg3.png" alt=""style="width:100%">
+                    </div>
+                    <div class="taball">
+                        <img src="img/picimg4.png" alt=""style="width:100%">
+                        <img src="img/webpic1.png" alt=""style="width:100%">
+                        <img src="img/webpic2.png" alt=""style="width:100%">
+                    </div>
+                </div>
+            
+                <div id="WEB DEVELOPMENT" class="w3-container img" style="display:none">
+                    <div class="taball">
+                        <img src="img/picimg3.png" alt=""style="width:100%">
+                        <img src="img/webimg1.png" alt=""style="width:100%">
+                        <img src="img/webimg2.png" alt=""style="width:100%">
+                    </div> 
+                    <div class="taball">
+                        <img src="img/webpic2.png" alt=""style="width:100%">
+                        <img src="img/picimg4.png" alt=""style="width:100%">
+                        <img src="img/webpic1.png" alt=""style="width:100%">
+                    </div>
+                </div>
+                
+                <div id="GAME DEVELOPMENT" class="w3-container img" style="display:none">
+                    <div class="taball">
+                        <img src="img/picimg4.png" alt=""style="width:100%">
+                        <img src="img/webpic1.png" alt=""style="width:100%">
+                        <img src="img/webpic2.png" alt=""style="width:100%">
+                    </div>
+                    <div class="taball">
+                        <img src="img/webimg1.png" alt=""style="width:100%">
+                        <img src="img/webimg2.png" alt=""style="width:100%">
+                        <img src="img/picimg3.png" alt=""style="width:100%">
+                    </div>
+                </div>
+
+                <div id="APP DEVELOPMENT" class="w3-container img" style="display:none">
+                    <div class="taball">
+                        <img src="img/picimg4.png" alt=""style="width:100%">
+                        <img src="img/webimg2.png" alt=""style="width:100%">
+                        <img src="img/picimg3.png" alt=""style="width:100%">
+                    </div>
+                    <div class="taball">
+                        <img src="img/picimg4.png" alt=""style="width:100%">
+                        <img src="img/webpic1.png" alt=""style="width:100%">
+                        <img src="img/webpic2.png" alt=""style="width:100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            function openImage(evt, imgName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("img");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+            }
+            document.getElementById(imgName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-border-red";
+            }
+            
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+    </script>
+    </body>
+</html>

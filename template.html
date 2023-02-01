@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Template</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;300;400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <style>
+            body{
+                margin:0px;
+                padding:0px;
+                font-family: 'Poppins', sans-serif;
+            }
+            .wrapper {
+                width: 1000px;
+                margin: auto;
+            }
+            .pr-pl {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+            .d-flex {
+                display: flex;
+                justify-content: space-between;
+            }
+            .container{            
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                background-color:whitesmoke;
+            }
+            .logo{
+                margin-right: 35px;
+                height: 48%;
+                padding-top: 18px;
+                }
+            ul{
+                list-style-type: none;
+                display: flex;
+                margin-right: 0px;
+            } 
+            ul li{
+                margin-right: 10px;
+                margin-left: 10px;   
+            }
+            a{
+                text-decoration: none;
+                color: black;
+                font-weight: 600;
+                margin-right:0px;
+                padding: 15px;
+                padding: 18px 15px 17px 16px;
+            }   
+            .active{
+                background-color:#6ea8ff;
+                color: white;
+            }
+            .menubar{         
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .menubar a:hover{           
+                border: 1px;
+                background-color: #6ea8ff;
+                color: white;
+            }
+            .search{
+                padding-top:15px;
+            }
+            .search img{
+                width: 25%;
+                height: 36%;
+                padding-left: 10px;
+            }
+            .search label{
+                font-weight: 600;
+                padding-left: 25px;
+                color: black;
+                font-size: 15px
+            }
+            .search a{            
+                padding-top: 0px;
+                padding-right: 0px;
+                margin-right: 0px;
+            }
+            .bg{
+                margin: 0px;
+                padding: 0px;
+                width: 100%;
+                height: 500px;
+                background: url("img/bg.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            h1{
+                margin: 0px;
+                padding: 0px;
+                color: white;
+                text-align: center;
+                padding-top: 100px;
+                font-size: 50px;
+                font-family: 'Barlow Condensed', sans-serif;
+            }
+            p{            
+                color: white;
+                text-align: center;
+                margin: 10px;
+                padding: 10px;
+            }
+            .bglearn{
+                text-align: center;
+                margin-top: 45px;
+            }
+            .bglearn a{            
+                color: white;
+                border: 2px;
+                padding: 15px;
+                background-color: #7a0c0c;
+                border-radius: 4px
+            } 
+            .bglearn a:hover{
+                background-color: #ebbbbb;
+                color:black;
+            }
+            button{ 
+                background-color: #6ea8ff;
+                padding: 13px;
+                border-radius: 5px;
+                font-weight: 700;
+                font-size: 18px;
+                border: 1px;
+            }
+            .ourservice{
+                text-align: center;
+            }
+            div.relative{
+                position: relative;
+                padding-top: 20px;
+            }
+            div.absolute{
+                position: absolute;
+                top: -23px;
+                left: -10px;
+            }
+            .flex-container{
+                display: flex;
+                flex-direction: row;
+                background-color: whitesmoke;
+            }
+            .flex-container >div{
+                width: 100%;
+                margin-left: 20px;
+                margin-right: 20px;
+                line-height: 1;
+                padding: 0px;
+              
+                margin-bottom: 61px;
+            }
+            .pcimg{
+                box-shadow: 3px 4px 6px #efe5e5;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-top: 30px;
+                padding-bottom: 30px;
+                text-align: center;
+            }
+            .pcimg:hover{
+                background-color: #efe8d9;
+            }
+            .pcimg img{
+                width: 80px;
+                padding-left: 65px;
+                padding-right: 65px;
+                padding-top: 15px;
+            }
+            .pcimg p{
+                color: black;
+                margin: 0px;
+                font-size: 13px;
+                padding: 0px 20px 15px 20px;
+                font-weight:inherit;
+                line-height: 1.4;
+            }
+            h4{
+                margin: 10px 0px;
+                padding: 0px;
+                font-size: 18px;
+            }
+            .portback{
+                height: 365px;
+                background-color :#2c3648;
+            }
+            .flex-portback{
+                display: flex;
+                flex-direction: row; 
+                width: 100%;
+                margin-top: 30px;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            .flex-portback >div{
+                padding:0px 0px 0px 0px;
+                width:220px;
+                height: 180px;
+                margin-left: 56px;
+                margin-right: 56px;
+            }
+            .portimg img{
+                width: 200px;
+                height: 150px;
+                margin-left: 10px;
+            }
+           .portimg h4{
+                margin: 6px 0px 0px 12px;
+                color: #f38f3a;       
+           }
+           .portimg p{
+                font-size: 13px;
+                line-height: 1.2;
+                padding: 0px 0px 0px 3px;
+                text-align: initial;
+                color:white;
+           }
+           h2{
+                font-weight: 600;
+                font-size: 30px;
+                color: #f38f3a;
+                margin: 0px;
+           }
+           div.heading{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 70px;
+           }
+            .heading a{
+                color: white;
+                border: 1px;
+                border-radius: 6px;
+                background-color: #6ea8ff;
+                padding: 5px;
+                font-size: 13px;
+            }
+            .spacing{
+                width:100%;
+                padding-top: 30px;
+            }
+            .offer p{
+                font-size: 13px;
+                padding-left: 13px;
+                padding-top: 0px;
+                color: #000;
+                text-align: left;
+            }
+            .offer h4{
+                padding-left: 16px;
+                padding-top: 10px;
+                color: #6ea8ff;
+                text-align: left;
+            }
+         
+            div.absolute4 h2{
+                font-size: 30px;
+                color: #6ea8ff;
+                text-align: center;
+            }
+            .absolute4 p {
+                color: #000;
+                font-weight: 600;
+            }
+            .flex-container1{
+                border-bottom: 1px solid #bdaeae;
+                padding-top: 30px;
+            }
+            .flex-container1 >div{
+                padding-bottom:15px;
+            }
+            .absolute5 {
+                position: absolute;
+                top: 55px;
+            }
+            .absolute5 p{
+                color: black;
+                font-size: 13px;
+                font-weight: 500;
+            }
+           .pcimg a{
+                font-size: 12px;
+                border: 1px solid;
+                background-color:  #6ea8ff;
+                color: white;
+                padding: 5px 15px;
+                border-radius: 5px;
+                text-align: center;
+                margin-left: 13px;
+           }
+           .test{
+                color: #6ea8ff;
+                padding-top: 17px;
+           }
+           .w-50{
+                width: 60%;
+           }
+           .w-50 p{         
+                color: black;
+                font-size: 17px;
+                font-weight: 600;
+           }
+           h5{
+                text-align: center;
+                font-weight: 900;
+                color: #f38f3a;
+           }
+           .w-50 img{      
+                width: 80px;
+                height: 80px;
+                margin-left: 15px;
+                margin-bottom: 20px;
+           }
+            .w-50 >div{
+                display: flex;
+                justify-content: center;
+           }
+           .flex-container2{
+                background-color:  #2c3648;
+           }
+           .border{
+                border-Bottom: 1px solid #bdaeae;       
+           }
+           .recentbox{
+                display: flex;
+                height: 80px; 
+           }
+           .footer h5{       
+                text-align: start;
+                margin: 15px 0px 0px 15px;
+                font-size: 15px;
+           }
+           .footer p{         
+                color: white;
+                font-size: 12px;
+                padding: 0px; 
+                text-align: start;
+                margin: 10px 15px;
+                line-height: 1.4;
+           }
+           .footer a{
+                padding: 0px;
+                font-size: 12px;
+                color:  #6ea8ff;
+                font-weight: 400;
+           }
+           .flex-container2 > div{
+                width: 210px;
+                text-align: start;
+                background-color: #2c3648;
+                height: 280px;
+                margin: 20px;
+           }  
+           form{          
+                margin-top: 15px;
+                margin-left: 15px;
+           } 
+           label{        
+                color: white;
+                font-size: 13px;
+           }
+           input[type=email]{
+                margin-top:12px;
+                width: 170px;
+           }
+           input[type=submit]{
+                margin-left: 100px;
+                margin-top: 15px;
+                color: white;
+                background-color: #6ea8ff;
+                border: 1px;
+                padding: 5px 15px;
+                border-radius: 4px;
+            }
+            .placeholder{
+                font-size: 12px;
+            }
+           .recent{
+                background-color: white;
+                width: 100%;
+                height: 70%;
+                margin: 13px 0px 0px 13px;
+           }
+           .icon{
+                margin: 10px 0px 0px 15px;
+                color: #6ea8ff;
+           }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="logo">
+                    <a href="#"> <img src="img/logo.png"></a>
+                </div>
+                <div class="menubar">
+                    <ul>
+                        <li><a class="active"href="#">Home</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <label for="Search">Search</label>
+                    <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="bg">
+                    <h1>Good Design Is Good Business</h1>
+                    <div>    
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem id consequatur harum reiciendis 
+                        doloribus natus odio non est neque quae, voluptatum nihil velit cumque, fugiat 
+                        delectus ratione praesentium quia dolores.</p>
+                    </div> 
+                      
+                    <div class="bglearn">
+                        <a href="">Learn More</a>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="flex-container relative">
+                <div class="ourservice absolute">
+                    <button>Our Services</button>
+                </div>
+
+                
+                <div class="pcimg">
+                    <img src="img/pc icon.png" alt="">
+                    <h4 class="pc">Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatum fuga laborum!
+                    Libero dicta odit eligendi distinctio at aliquam possimus! Similique nisi fugit voluptates ex laboriosam temporibus, 
+                    architecto dignissimos qui.</p>   
+                </div>
+                
+                <div class="pcimg">
+                    <img src="img/searchicon.png" alt="">
+                    <h4>Search Optimization</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatum fuga laborum!
+                    Libero dicta odit eligendi distinctio at aliquam possimus! Similique nisi fugit voluptates ex laboriosam temporibus, 
+                    architecto dignissimos qui.</p>   
+                </div>
+                
+                <div class="pcimg ">
+                    <img src="img/buy icon.png" alt="">
+                    <h4>Online Shop</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatum fuga laborum!
+                    Libero dicta odit eligendi distinctio at aliquam possimus! Similique nisi fugit voluptates ex laboriosam temporibus, 
+                    architecto dignissimos qui.</p>   
+                </div>
+                
+                <div class="pcimg ">
+                    <img src="img/like icon.png" alt="">
+                    <h4>Social Media</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatum fuga laborum!
+                    Libero dicta odit eligendi distinctio at aliquam possimus! Similique nisi fugit voluptates ex laboriosam temporibus, 
+                    architecto dignissimos qui.</p>   
+                    </div>
+            </div>
+            <div class="spacing portback ">
+                <div>   
+                    <div class="heading ">
+                        <h2>Our Portfolio Awesome</h2>
+                        <a href="">More Works</a>
+                    </div>
+                    
+                    <div class="flex-portback">
+                            <div class="portimg">
+                                <img src="img/blankimg1.png" alt="">
+                                <h4>Lorsum dolor elit. Dol</h4>
+                                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit suscipit iusto tempore ad totam blanditiis.</p>
+                            </div>
+                            <div class="portimg">
+                                <img src="img/blankimg1.png" alt="">
+                                <h4>dolor elit. Dol</h4>
+                                <p>Lorem ipsum dolor Dolorum fugiat dolorem porro tem veritatis suscipit iusto tempore ad totam blanditiis.</p>
+                            </div>
+                            <div class="portimg">
+                                <img src="img/blankimg1.png" alt="">
+                                <h4>fugiat dolorem porro </h4>
+                                <p>Lorem ipsum dolor sit Lorem ipsum dolor sit  Dolorum fugiat dolorem porro tempore ad totam blanditiis.</p>
+                            </div>
+                    </div>
+                </div>    
+            </div>
+            
+                
+                <div class="flex-container flex-container1">
+                    <div>
+                        <div class="absolute4">
+                            <h2>What We Offer</h2>
+                            <p>lorem dolor sit amt elit nisi fugit ex fuga ex at odit imilique nisi fugit voluptates ex </p>
+                        </div>
+
+                        <div class="d-flex">
+                            <div class="pcimg offer">
+                                <h4>Web Design</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatum fuga laborum!
+                                Libero dicta odit eligendi distinctio at aliquam possimus! Similique nisi fugit voluptates ex laboriosam temporibus, 
+                                architecto dignissimos qui.</p> 
+                                <a href=""class="left">Details</a>  
+                            </div>
+                            <div class="pcimg offer">
+                                <h4>Search Optimization</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatum fuga laborum!
+                                Libero dicta odit eligendi distinctio at aliquam possimus! Similique nisi fugit voluptates ex laboriosam temporibus, 
+                                architecto dignissimos qui.</p>   
+                            </div>
+                            <div class="pcimg offer">
+                                <h4>Online Shop</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatum fuga laborum!
+                                Libero dicta odit eligendi distinctio at aliquam possimus! Similique nisi fugit voluptates ex laboriosam temporibus, 
+                                architecto dignissimos qui.</p> 
+                                <a href="">Details</a>  
+                            </div>
+                            <div class="pcimg offer">
+                                <h4>Social Media</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia voluptatum fuga laborum!
+                                Libero dicta odit eligendi distinctio at aliquam possimus! Similique nisi fugit voluptates ex laboriosam temporibus, 
+                                architecto dignissimos qui.</p>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="container"style="">
+                <div class="w-50">
+                    <h1 class="test">TESTIMONIALS</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur a temporibus iure enim tempora cupiditate cum praesentium dolores tempore. Sint, harum?</p>
+                    <h5>Joe Deo/CEO of Loremipsum</h5>
+                    <div>    
+                        <img src="img/girlicon.png" alt="">
+                        <img src="img/boyicon.png" alt="">
+                        <img src="img/girlicon.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer">
+                <div class="flex-container flex-container2">
+                    <div class="footer">
+                        <h5>BIRD FEEDS</h5>
+                        <div class="border">
+                            <p>Check out this great theme item<br><a>https//dkljsjdh.com</a><br>2 weeks ago</p>
+                        </div>
+                        <div class="border">
+                            <p>Check out this great theme item<br><a>https//dkljsjdh.com</a><br>2 weeks ago</p>  
+                        </div>
+                        <div>
+                            <p>Check out this great theme item<br><a>https//dkljsjdh.com</a><br>2 weeks ago</p>  
+                        </div>
+                    </div> 
+
+                    <div class="footer">
+                        <h5>NEWS LETTER</h5>
+                        <div class="border">
+                            <p>Check out this great theme item<br><a>https//dkljsjdh.com</a><br>2 weeks ago</p>
+                        </div>
+                        <div>
+                            <form>
+                                <label for="email">Your email Address</label>
+                                <input class="placeholder"type="email" name="email" id="email"placeholder="Enter your email address">
+                                <input type="submit" value="Sign Up">
+                            </form>
+                        </div>
+                    </div> 
+
+                    <div class="footer">
+                        <h5>RECENT PROJECTS</h5>
+                        <div class="border recentbox"> 
+                            <div class="recent">
+                            </div>
+                            <div>
+                                <p>Sketchy Business Card<br><a>https//dkljsjdh.com</a><br>2 weeks ago</p>
+                            </div>
+                        </div>
+                        <div class="border recentbox"> 
+                            <div class="recent">
+                            </div>
+                            <div>
+                                <p>Sketchy Business Card<br><a>https//dkljsjdh.com</a><br>2 weeks ago</p>
+                            </div>
+                        </div>
+                        <div class=" recentbox"> 
+                            <div class="recent">
+                            </div>
+                            <div>
+                                <p>Sketchy Business Card<br><a>https//dkljsjdh.com</a><br>2 weeks ago</p>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="footer">
+                            <h5>CONTACT</h5>
+                        <div class="recentbox"> 
+                            <div class="icon">
+                                <i class="fa-solid fa-phone fa-2x "></i>
+                            </div>
+                            <div>
+                                <p>1-000-000-0000</p>
+                                <p>1-000-000-0000</p>
+                            </div>
+                        </div>
+
+                        <div class="recentbox"> 
+                            <div class="icon">
+                                <i class="fa-solid fa-mobile-screen-button fa-2x"></i>
+                            </div>
+                            <div>
+                                <p>1-000-000-0000</p>
+                                <p>1-000-000-0000</p>
+                            </div>
+                        </div>
+                         <div class="recentbox"> 
+                             <div class="icon">
+                                    <i class="fa-regular fa-envelope fa-2x "></i>
+                             </div>
+                             <div>
+                                    <p>1-000-000-0000</p>
+                                    <p>1-000-000-0000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>

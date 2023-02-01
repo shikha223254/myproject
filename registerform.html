@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <style>
+            body{
+                font-family: 'Poppins', sans-serif;
+                margin:0px;
+                padding:0px;
+            }
+            .heading{
+                display: flex;
+                justify-content: center;
+                margin-top: 0px;
+            }
+            h1{            
+                color: #e5b062;
+                font-weight: 600;
+                margin:0px;
+                margin-top: 30px;
+                margin-bottom: 25px;
+            }
+            .registration{             
+                display: flex;
+                justify-content: center;
+                color: #28282c;
+                margin-bottom:100px;
+            }
+            .div1{
+                box-shadow: 4px 4px 6px #cfcfc4;
+            }
+            .webinar{
+                width: 100%;
+            }
+            h3{
+                font-size: 30px;
+                text-align: center;
+                padding-top: 11px;
+                padding-bottom: 11px;
+                border: 2px solid;
+                background-color: #e5b062;
+                color: white;
+                border-radius: 5px;
+                border: hidden;
+                margin: 0px;   
+            }
+            .d-flex{
+                display: flex;
+                width: 100%;;
+            }
+            .w-500{
+                width:500px;
+                display: grid;
+            }
+            label{           
+                margin-left: 15px;
+                margin-bottom: 8px;
+                font-weight: 600;
+                margin-top: 15px;
+            }
+            .w-500 input{
+                margin-left: 15px;
+                margin-right: 15px;
+                padding-bottom: 20px;
+                padding-top: 20px; 
+                border: 2px;
+                outline: 0;
+                border-radius: 4px;
+                border-color: #e5e5e5;
+                background-color: #ffeeda;
+                padding-right: 15px;
+                height: 20px;
+                box-shadow: 4px 4px 6px #cfcfc4;
+            }
+            .w-500 input:focus{
+                border: 2px;
+                border-radius: 4px;
+                border-style: solid;
+                border-color: rgb(201, 86, 86) !important;
+                outline: red;
+                background-color: #ebad66;
+            }
+            .placeholder{
+                padding-left: 15px;
+                font-weight: lighter;
+                font-size: 15px;
+                text-transform: capitalize;
+            }
+            .ew{
+               width: 100%; 
+            }
+            .radio{ 
+                margin-top: 30px;
+                display: block;
+            }
+            h4{           
+                margin: 0px;
+                margin-left: 15px;
+                margin-bottom: 8px;
+            }
+            .radio label{
+                margin-right: 100px;
+                width: 100%;                
+                margin-left: 15px;
+            }
+            input[type="radio"]{
+                margin-left: 15px;
+            }
+            input[type="checkbox"]{
+                margin-left: 15px;
+            }
+            input[type="button"]{
+                width: 40%;
+                margin-left: 15px;
+                padding-bottom: 25px;
+                padding-top: 25px;
+                margin-top: 15px;
+                font-size: 25px;
+                background-color: #e5b062;
+                color: white;
+                font-weight: 600;
+                border: hidden;
+            }
+            select {
+                width: 90%;
+                border: 2px solid;
+                border-radius: 4px;
+                border-color: #e5e5e5;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                margin-left: 15px;
+                font-weight: lighter;
+                padding-left: 15px;
+                font-size: 15px;
+                height: 40px;
+            }
+            select:hover{
+                background-color: #ffeeda;
+                color: black;
+            }
+            .w-300{
+                width:33.3%;
+                display: grid;
+            }
+            .ew textarea{
+                margin-left: 15px;
+                outline:0;
+                border: 2px;
+                border-radius: 4px;
+                border-color: #e5e5e5;
+                background-color: #ffeeda;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                padding-right: 15px;
+                padding-left: 15px;
+                font-weight: lighter;
+                box-shadow: 4px 4px 6px #cfcfc4;
+            }
+            .ew textarea:hover{
+                border: 2px;
+                border-radius: 4px;
+                border-style: solid;
+                border-color: rgb(201, 86, 86) !important;
+                outline: red;
+                color: black;
+                background-color: #ebad66;
+            }
+            }
+            .button {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+    </head>
+
+    <body>
+            <div class="heading">
+                <h1>Your Company</h1>
+            </div>
+    
+            <div class="registration">
+                <form>
+                    <div class="webinar">
+                        <h3>Webinar Registration</h3>
+                    </div>
+                    <div class="d-flex">
+                        <div class="w-500" >
+                            <label for="fname">First Name</label>
+                            <input class="placeholder" type="text" id="fname" name="fname" placeholder="First name" >
+                        </div>
+                        <div class="w-500">
+                            <label for="lname">Last Name</label>
+                            <input class="placeholder" type="text" id="lname" name="lname" placeholder="Last name" >
+                        </div>
+                    </div>
+
+                    <div class="w-500 ew" >
+                        <label for="fname">Email Address</label>
+                        <input class="placeholder" type="email" id="fname" name="fname" placeholder="Email Address" >
+                    </div> 
+                    <div class="w-500 ew" >
+                        <label for="fname">Company</label>
+                        <input class="placeholder" type="email" id="fname" name="fname" placeholder="Company" >
+                    </div> 
+
+                    <div class="radio ew">
+                        <h4>How did you hear about the webinar</h4>
+                        <input type="radio" name="" id="Social Media">
+                        <label for="Social Media">Social Media</label>
+                        <input type="radio" name="" id="Word of Mouth">
+                        <label for="Word of Mouth">Word of Mouth</label> 
+                        <input type="radio" name="" id="Advertisement">
+                        <label for="Advertisement">Advertisement</label>
+                        <input type="radio" name="" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                    
+                    <div class="radio ew">
+                        <h4>Interest in Webinar</h4>
+                        <input type="checkbox" name="" id="Website">
+                        <label for="Website">Website</label>
+                        <input type="checkbox" name="" id="Mobile App">
+                        <label for="Mobile App">Mobile App</label> 
+                        <input type="checkbox" name="" id="Internet">
+                        <label for="Internet">Internet</label>
+                        <input type="checkbox" name="" id="other">
+                        <label for="other">Other</label>
+                    </div>
+                    
+                    <div class="d-flex">
+                        <div class="w-300" >
+                            <label class="select sw" for="Country">Country</label>
+                            <select name="Country" id="Country">
+                                <option value="India">India</option>
+                                <option value="US">US</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Europe">Europe</option>
+                            </select>
+                        </div> 
+                        <div class="w-300">
+                            <label class="select sw" for="state">State</label>
+                            <select name="State" id="State">
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Gujarat">Gujarat</option>
+                            </select>
+                        </div>
+                        <div class="w-300">    
+                            <label class="select" for="City">City</label>
+                            <select name="City" id="City">
+                                <option value="Indore">Indore</option>
+                                <option value="Ujjain">Ujjain</option>
+                                <option value="Bhopal">Bhopal</option>
+                                <option value="Dewas">Dewas</option>
+                            </select>
+                        </div> 
+                    </div>
+
+                    <div class="w-500 ew">
+                        <label for="Description">Description:</label>
+                        <textarea class="placeholder"name="Description" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                      
+                    <div class="radio button" >
+                        <input type="button" value="Sign Up Today! " >
+                    </div> 
+
+                </form>  
+            </div>
+    </body>
+</html>
